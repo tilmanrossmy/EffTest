@@ -4,7 +4,7 @@ import cats.Eval
 import org.atnos.eff._
 import org.atnos.eff.syntax.all._
 import time.EvalInterpreter.TimeEffectEvalInterpreterSyntax
-import time.TimeEffect.TimeAlgebra
+import time.Effect.TimeAlgebra
 
 
 /**
@@ -16,7 +16,7 @@ object EvalInterpreterTest extends App {
 
   type Stack=Fx.fx2[Eval,TimeAlgebra]
 
-  private val time = TimeEffect.getTime[Stack]().runTime.runEval.run
+  private val time = Effect.getTime[Stack]().runTime.runEval.run
 
   println(time)
 

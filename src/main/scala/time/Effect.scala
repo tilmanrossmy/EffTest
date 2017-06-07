@@ -8,7 +8,7 @@ import org.atnos.eff.MemberIn.|=
 /**
   * Created by tilman on 15.05.17.
   */
-object TimeEffect {
+object Effect {
 
   type _time[R]= TimeAlgebra |= R
 
