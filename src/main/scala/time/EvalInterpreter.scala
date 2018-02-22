@@ -5,7 +5,7 @@ import java.time.ZonedDateTime
 import org.atnos.eff.EvalEffect._
 import org.atnos.eff._
 import org.atnos.eff.interpret._
-import time.TimeEffect.{GetTime, TimeAlgebra}
+import time.Effect.{GetTime, TimeAlgebra}
 
 /**
   * Created by tilman on 15.05.17.

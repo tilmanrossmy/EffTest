@@ -9,7 +9,6 @@ import time.Effect.TimeAlgebra
 import scala.concurrent.ExecutionContext.Implicits.global
 
 /**
-  * Created by tilman on 15.05.17.
   */
 object TaskInterpreterTest extends App {
 

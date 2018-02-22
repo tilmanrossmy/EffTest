@@ -6,13 +6,11 @@ import org.atnos.eff._
 import org.atnos.eff.addon.scalaz.concurrent.TaskEffect._task
 import org.atnos.eff.addon.scalaz.task.fromTask
 import org.atnos.eff.interpret._
-import time.TimeEffect.{GetTime, TimeAlgebra}
+import time.Effect.{GetTime, TimeAlgebra}
 
 import scalaz.concurrent.Task
 
-/**
-  * Created by tilman on 15.05.17.
-  */
+
 object TaskInterpreter {
 
   outer =>
