@@ -20,7 +20,7 @@ object EffectInterpreterTest extends App {
   type S = Fx2[TimedTask, Writer[String, ?]]
 
  val program: Eff[S, ZonedDateTime] = for {
-    time <- new EffInterpreter[S]().getTime()
+    time <- new EffInterpreter[S].timeAlgebraInterpreter.getTime
     _ <- WriterEffect.tell[S,String](time.toString)
   } yield time
 

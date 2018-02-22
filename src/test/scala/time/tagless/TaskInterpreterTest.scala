@@ -1,5 +1,5 @@
 package time.tagless
 
 object TaskInterpreterTest extends App{
-    println(TaskInterpreter.getTime().unsafePerformSync)
+    println(TaskInterpreter.timeAlgebraInterpreter.getTime.unsafePerformSync)
 }
